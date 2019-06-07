@@ -1,11 +1,12 @@
 {
-  "name": "react-electron-editor",
-  "version": "1.0.0",
+  "description": "View & modify local files using React & Electron backed by an Express server",
   "scripts": {
     "start-client": "cd ../client && yarn start",
     "server": "node server.js",
     "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn start-client\""
   },
+  "repository": "https://github.com/LauraAubin/react-electron-editor",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.16.2"
   },

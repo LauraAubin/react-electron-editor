@@ -1,6 +1,5 @@
 {
-  "name": "react-electron-editor",
-  "version": "0.1.0",
+  "description": "View & modify local files using React & Electron backed by an Express server",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -12,6 +11,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "repository": "https://github.com/LauraAubin/react-electron-editor",
+  "license": "ISC",
   "eslintConfig": {
     "extends": "react-app"
   },
