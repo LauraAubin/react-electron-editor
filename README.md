@@ -1,8 +1,25 @@
 # React Electron Editor
 
-#### This project creates an application using React to edit local files.
+#### This project creates an application to view and modify local files using React and Electron, backed by an Express server.
 
-<hr>
+## Setup
+
+From the root folder run,
+```
+$ npm install
+```
+
+Install dependencies with,
+```
+$ yarn setup
+```
+
+## Launch application
+```
+$ yarn start
+```
+
+# Description
 
 ### First off, **stop whatever you're doing. Your mind is about to be 🤯.**
 
