@@ -3,18 +3,6 @@
   "description": "View & modify local files using React & Electron backed by an Express server",
   "version": "1.0.0",
   "author": "LauraAubin",
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "electron-is-dev": "0.3.0"
-  },
-  "devDependencies": {
-    "electron": "^6.0.2",
-    "electron-builder": "^21.2.0",
-    "concurrently": "^3.5.0",
-    "wait-on": "^3.2.0"
-  },
   "main": "public/electron.js",
   "homepage": "./",
   "scripts": {
@@ -28,6 +16,19 @@
   },
   "repository": "https://github.com/LauraAubin/react-electron-editor",
   "license": "ISC",
+  "dependencies": {
+    "electron-is-dev": "0.3.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "electron": "^6.0.2",
+    "electron-builder": "^21.2.0",
+    "concurrently": "^3.5.0",
+    "wait-on": "^3.2.0"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
