@@ -9,14 +9,28 @@ declare global {
 }
 
 function App() {
+  const [path, setPath] = useState('./');
   const [directoryContents, setDirectoryContents] = useState([]);
 
-  ipcRenderer.send('readDir');
-  ipcRenderer.on('directoryContents', (event, arg) => {
-    directoryContents !== arg && setDirectoryContents(arg);
-  });
+  const updatePath = event => setPath(event.target.value);
 
-  return directoryContents.map(name => <div>{name}</div>);
+  const readDirectory = () => {
+    ipcRenderer.send('readDir', path);
+    ipcRenderer.on('directoryContents', (event, arg) => {
+      directoryContents !== arg && setDirectoryContents(arg);
+    });
+  };
+
+  return (
+    <>
+      <input onChange={updatePath} value={path} />
+      <button onClick={readDirectory}>Read directory</button>
+
+      {directoryContents.map(name => (
+        <div>{name}</div>
+      ))}
+    </>
+  );
 }
 
 export default App;

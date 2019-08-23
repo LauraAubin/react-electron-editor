@@ -16,8 +16,8 @@ app.on('activate', function() {
   if (mainWindow === null) createWindow();
 });
 
-ipcMain.on('readDir', event => {
-  event.reply('directoryContents', fs.readdirSync('./'));
+ipcMain.on('readDir', (event, args) => {
+  event.reply('directoryContents', fs.readdirSync(args));
 });
 
 function createWindow() {
