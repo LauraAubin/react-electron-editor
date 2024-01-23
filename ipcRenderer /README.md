@@ -2,23 +2,25 @@
 
 ## Setup
 
-```
-$ npm install
+1. Install dependencies:
+
+```bash
+$ yarn install
 ```
 
-Start a local version with,
+2. Run locally:
 
-```
-$ yarn start-app
-```
-
-Build an Electron application with,
-
-```
-$ yarn build-app
+```bash
+$ yarn start
 ```
 
-An application should exist in the `dist` folder.
+3. Build an Electron application:
+
+```bash
+$ yarn build
+```
+
+4. Find the app in in the `./dist` folder.
 
 ## References
 
